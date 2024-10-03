@@ -1,7 +1,7 @@
 .hack2024-button {
     background-color: red !important;
     font-size: 30px !important;
-}   
+}
 
 @media screen and (max-width: 320px) {
     /* Стили для очень маленьких экранов */

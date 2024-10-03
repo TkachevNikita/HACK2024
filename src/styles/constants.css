@@ -12,4 +12,5 @@
     --successdark-color: #09D31D;
     --warninglight-color: rgba(242, 168, 24, 0.16);
     --warningdark-color: #F2A818;
+    --primary-gradient: linear-gradient(90deg, rgba(107,53,222,1) 0%, rgba(20,55,246,1) 100%);
   }

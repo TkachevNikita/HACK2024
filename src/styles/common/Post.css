@@ -1,0 +1,17 @@
+.post {
+    background: var(--primary-gradient);
+    color: var(--light-color);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.post__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.post__title {
+    font-weight: 500;
+}
