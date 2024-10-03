@@ -10,6 +10,7 @@ const PagesRouter = () => {
         <Layout>
             <Routes>
                 <Route path="HACK2024/participant" element={<ProfileUserParticipant />} />
+                <Route path="HACK2024/participant" element={<ProfileUserParticipant />} />
                 <Route path="HACK2024/sign-up" element={<Registration />} />
                 <Route path="HACK2024/sign-in" element={<Login />} />
             </Routes>

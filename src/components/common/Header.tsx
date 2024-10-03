@@ -1,6 +1,12 @@
+import DefaultButton from "@components/ui/DefaultButton"
+import PageContainer from "@components/ui/PageContainer"
+
 const Header = () => {
   return (
-    <header>header</header>
+    <PageContainer>
+    <DefaultButton>header</DefaultButton>
+    </PageContainer>
+    
   )
 }
 

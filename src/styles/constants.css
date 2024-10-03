@@ -1,0 +1,15 @@
+ /* colors */
+:root {
+    --primary-color: #1437F6;
+    --light-color: #FFFFFF;
+    --sexviolet-color: #E6EAFD;
+    --harddark-color: #000000;
+    --hardgrey-color: #8F8F8F;
+    --ultrahardgrey-color: #909EAA;
+    --middlegrey-color: #E5E5E5;
+    --lightdark-color: #232427;
+    --successlight-color: rgba(9, 211, 29, 0.16);
+    --successdark-color: #09D31D;
+    --warninglight-color: rgba(242, 168, 24, 0.16);
+    --warningdark-color: #F2A818;
+  }
