@@ -1,0 +1,6 @@
+.accent {
+    background-color: var(--sexviolet-color) !important;
+    color: var(--primary-color) !important;
+    border-radius: 8px !important;
+    text-transform: none !important;
+}
