@@ -1,5 +1,6 @@
 import AccentButton from "@components/ui/AccentButton";
 import {Link} from "@mui/material";
+import withAuthRouteCheck from "@shared/hoc/withAuthRouteCheck";
 import '@styles/common/Header.css'
 
 const Header = () => {
@@ -23,4 +24,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default withAuthRouteCheck(Header);
