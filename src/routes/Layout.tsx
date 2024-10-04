@@ -12,9 +12,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <PageContainer>
       <Header/>
-        <Main>
-          {children}
-        </Main>
+      <Main>
+        {children}
+      </Main>
       <Footer/>
     </PageContainer>
   );

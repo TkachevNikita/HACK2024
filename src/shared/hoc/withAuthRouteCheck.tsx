@@ -17,12 +17,12 @@ const withAuthRouteCheck = <P extends object>(
 
     return (
       <>
-        {!pathname.includes("/HACK2024/") && <WrappedComponent {...(children as P)} />}
+        {(!pathname.includes("/HACK2024/sign-in") && !pathname.includes("/HACK2024/sign-up")) && <WrappedComponent {...(children as P)} />}
       </>
     );
   };
 
-  WithHack2024RouteCheck.displayName = `WithHack2024RouteCheck(${WrappedComponent.displayName || WrappedComponent.name})`;
+  WithHack2024RouteCheck.displayName = `withAuthRouteCheck(${WrappedComponent.displayName || WrappedComponent.name})`;
 
   return WithHack2024RouteCheck;
 };

@@ -6,12 +6,15 @@
     --harddark-color: #000000;
     --hardgrey-color: #8F8F8F;
     --ultrahardgrey-color: #909EAA;
+    --lightgrey-color: rgba(128, 128, 128, 0.8);
     --middlegrey-color: #E5E5E5;
     --middleovergrey-color: #0F0F0F;
     --lightdark-color: #232427;
     --successlight-color: rgba(9, 211, 29, 0.16);
     --successdark-color: #09D31D;
     --warninglight-color: rgba(242, 168, 24, 0.16);
+    --errordark-color: #F21818;
+    --errorlight-color: rgba(242, 24, 24, 1);
     --warningdark-color: #F2A818;
     --primary-gradient: linear-gradient(90deg, rgba(107,53,222,1) 0%, rgba(20,55,246,1) 100%);
   }
