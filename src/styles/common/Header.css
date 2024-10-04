@@ -1,0 +1,21 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo img {
+    width: 160px;
+    height: 60px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header__nav--item {
+    font-size: 18px !important;
+    color: var(--harddark-color) !important;
+    text-decoration: none !important;
+}
