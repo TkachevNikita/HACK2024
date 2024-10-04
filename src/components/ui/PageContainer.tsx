@@ -5,7 +5,7 @@ import type { BoxProps } from '@mui/material/Box';
 const PageContainer: React.FC<BoxProps> = (props) => {
     const {children, ...rest} = props
     return (
-    <Box component="section" sx={{ p: 2, border: '1px dashed grey' }} {...rest}>
+    <Box component="section" sx={{ p: 2, border: '1px dashed grey', display: 'flex', flexDirection: 'column', }} {...rest}>
         {children}
     </Box>
   );

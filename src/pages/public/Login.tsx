@@ -1,6 +1,10 @@
+import PageContainer from "@components/ui/PageContainer"
+
 const Login = () => {
   return (
-    <div>Login</div>
+    <PageContainer>
+      sdsd
+    </PageContainer>
   )
 }
 

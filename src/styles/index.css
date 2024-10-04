@@ -1,6 +1,6 @@
 @import './constants.css';
 
 body {
-    background-color: var(--primary-color)
+    background-color: var(--light-color)
 }
 
