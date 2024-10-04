@@ -24,3 +24,21 @@
     color: var(--harddark-color);
     text-decoration: none !important;
 }
+
+.header__burger {
+    display: none !important;
+}
+
+@media (max-width: 620px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: block !important;
+    }
+
+    .header__logo {
+        display: none;
+    }
+}
