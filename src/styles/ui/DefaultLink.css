@@ -1,63 +1,53 @@
-@import url('../constants.css');
+@import '../constants.css';
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
 
-.hack2024-button-default.active {
-    background-color: var(--primary-color) !important;
-    font-size: 16px !important;
-    width: 30% !important;
-    color: var(--light-color) !important;
-    border-radius: 12px !important;
-    padding: 10px 20px !important;
-    text-transform: none !important;
-}
 
-.hack2024-button-default {
-    background-color: var(--middlegrey-color) !important;
+.hack2024-default-link {
+    color: var(--primary-color) !important;
     font-size: 16px !important;
-    width: 30% !important;
-    color: var(--ultrahardgrey-color) !important;
-    border-radius: 12px !important;
-    padding: 10px 20px !important;
-    text-transform: none !important;
+    font-weight: 400 !important;
+    text-decoration: none;
+    
 }
 
 @media screen and (max-width: 320px) {
     /* Стили для очень маленьких экранов */
-    .hack2024-button {
+    .hack2024-default-link  {
     
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
     /* Стили для небольших экранов */
-    .hack2024-button {
+    .hack2024-default-link  {
     
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* Стили для планшетов */
-    .hack2024-button {
+    .hack2024-default-link  {
     
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Стили для больших планшетов */
-    .hack2024-button {
+    .hack2024-default-link  {
     
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     /* Стили для стандартного разрешения монитора */
-    .hack2024-button {
+    .hack2024-default-link  {
     
     }
 }
 
 @media screen and (min-width: 1441px) {
     /* Стили для ультрашироких экранов */
-    .hack2024-button {
+    .hack2024-default-link  {
     
     }
 }

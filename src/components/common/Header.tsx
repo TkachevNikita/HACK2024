@@ -1,12 +1,12 @@
-import AccentButton from "@components/ui/AccentButton.tsx";
+import AccentButton from "@components/ui/AccentButton";
 import {Link} from "@mui/material";
+import withAuthRouteCheck from "@shared/hoc/withAuthRouteCheck";
 import '@styles/common/Header.css'
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 
 const Header = () => {
   return (
       <header className="header">
-          <div className="header__container">
+        <div className="header__container">
               <a href="#" className="header__logo">
                   <img src="https://paperbackdesign.com/wp-content/uploads/2015/04/generic-logo_150ppi-600x300px.jpg" alt="logo"/>
               </a>
@@ -17,12 +17,11 @@ const Header = () => {
               </nav>
 
               <AccentButton>
-                  <PersonOutlineOutlinedIcon/>
                   Войти
               </AccentButton>
-          </div>
+              </div> 
       </header>
   )
 }
 
-export default Header
+export default withAuthRouteCheck(Header);

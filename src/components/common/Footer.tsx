@@ -1,7 +1,7 @@
+import withAuthRouteCheck from "@shared/hoc/withAuthRouteCheck";
+
 const Footer = () => {
-  return (
-    <footer>Footer</footer>
-  )
+    return <footer>Footer</footer>
 }
 
-export default Footer
+export default withAuthRouteCheck(Footer);

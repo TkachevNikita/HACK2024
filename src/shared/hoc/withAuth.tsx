@@ -12,7 +12,7 @@ const withAuth = <P extends object>(Page: React.ComponentType<P>) => {
     return isAuthenticated ? (
       <Page {...(props as P)} />
     ) : (
-      <Navigate to="/sign-in" replace />
+      <Navigate to="/HACK2024/sign-in" replace />
     );
   };
 

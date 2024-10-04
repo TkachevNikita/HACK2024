@@ -1,63 +1,53 @@
-@import url('../constants.css');
-
-.hack2024-button-default.active {
-    background-color: var(--primary-color) !important;
-    font-size: 16px !important;
-    width: 30% !important;
-    color: var(--light-color) !important;
+.hack2024-textField {
+    background-color: transparent !important;
     border-radius: 12px !important;
-    padding: 10px 20px !important;
-    text-transform: none !important;
+    font-size: 30px !important;
+    
+    width: 30%;
 }
-
-.hack2024-button-default {
-    background-color: var(--middlegrey-color) !important;
-    font-size: 16px !important;
-    width: 30% !important;
-    color: var(--ultrahardgrey-color) !important;
+.hack2024-textField fieldset {
     border-radius: 12px !important;
-    padding: 10px 20px !important;
-    text-transform: none !important;
-}
+    padding: 16px !important;
+}   
 
 @media screen and (max-width: 320px) {
     /* Стили для очень маленьких экранов */
-    .hack2024-button {
+    .hack2024-textField {
     
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
     /* Стили для небольших экранов */
-    .hack2024-button {
+    .hack2024-textField {
     
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* Стили для планшетов */
-    .hack2024-button {
+    .hack2024-textField {
     
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Стили для больших планшетов */
-    .hack2024-button {
+    .hack2024-textField {
     
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     /* Стили для стандартного разрешения монитора */
-    .hack2024-button {
+    .hack2024-textField {
     
     }
 }
 
 @media screen and (min-width: 1441px) {
     /* Стили для ультрашироких экранов */
-    .hack2024-button {
+    .hack2024-textField {
     
     }
 }
