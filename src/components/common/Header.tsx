@@ -31,7 +31,7 @@ const Header = () => {
                  <PrimaryTitle>СЦЕНА</PrimaryTitle>
               </DefaultLink>
               <nav className="header__nav">
-                {links.map((i, id) => <Link onClick={() => setSelected(id)} to={i.url} className="header__nav--item" style={{color: selected === id ? '#1437F6' : ''}}>{i.title}</Link>)}
+                {links.map((i, id) => <Link key={id} onClick={() => setSelected(id)} to={i.url} className="header__nav--item" style={{color: selected === id ? '#1437F6' : ''}}>{i.title}</Link>)}
               </nav>
               <AccentButton>
                   Войти

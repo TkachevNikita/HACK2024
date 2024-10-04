@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             </Box>
             <div className="home__events">
                 {eventsMock.map((event) =>
-                    <Event event={event}/>
+                    <Event key={event.id} event={event}/>
                 )}
             </div>
         </>
