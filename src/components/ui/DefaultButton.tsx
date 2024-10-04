@@ -5,7 +5,7 @@ import type { ButtonProps } from '@mui/material/Button';
 
 const DefaultButton: React.FC<ButtonProps> = (props) => {
     const {children, ...rest} = props
-    return <Button className="hack2024-button" {...rest}>{children}</Button>
+    return <Button className="hack2024-button-default" {...rest}>{children}</Button>
 }
 
 export default DefaultButton
