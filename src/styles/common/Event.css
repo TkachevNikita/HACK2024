@@ -1,7 +1,9 @@
 .event {
-    width: 30%;
+    flex: 1 1 calc(33.333% - 20px);
     border-radius: 16px;
     box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    max-width: 400px;
+    width: 100%;
 
     .event__title {
         font-size: 20px;
@@ -40,5 +42,19 @@
     .event__date {
         color: var(--ultrahardgrey-color);
         font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .event {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .event {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
