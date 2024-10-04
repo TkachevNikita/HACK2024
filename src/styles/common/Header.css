@@ -1,6 +1,7 @@
 .header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__logo img {
@@ -11,8 +12,6 @@
 .header__nav {
     display: flex;
     gap: 30px;
-    margin-right: auto;
-    margin-left: 40px;
 }
 
 .header__nav--item {

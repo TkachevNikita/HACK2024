@@ -1,6 +1,7 @@
 import AccentButton from "@components/ui/AccentButton.tsx";
 import {Link} from "@mui/material";
 import '@styles/common/Header.css'
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 
 const Header = () => {
   return (
@@ -16,6 +17,7 @@ const Header = () => {
               </nav>
 
               <AccentButton>
+                  <PersonOutlineOutlinedIcon/>
                   Войти
               </AccentButton>
           </div>
