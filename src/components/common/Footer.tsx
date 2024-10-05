@@ -8,8 +8,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import '@styles/common/Footer.css'
 
 const Footer = () => {
-    return <footer className="footer" style={{ flex: '0 0 auto', marginTop: 2}}>
-      <div style={{display: 'flex', alignItems: 'center', columnGap: 10}}>
+    return <footer className="footer" style={{ flex: '0 0 auto', marginTop: 2, }}>
+      <div style={{display: 'flex', alignItems: 'center', columnGap: 10, maxWidth: 1320}}>
         
         <Link sx={{fontSize: '12px', color: 'white', lineHeight: 0}}><YouTubeIcon/></Link>
         <Link sx={{fontSize: '12px', color: 'white', lineHeight: 0}}><TelegramIcon/></Link>

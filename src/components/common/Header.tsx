@@ -34,7 +34,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <div className="header__container">
+            <div className="header__container" style={{maxWidth: 1320, marginLeft: 'auto', marginRight: 'auto'}}>
                 <DefaultLink sx={{textDecoration: 'none'}} href="/" className="header__logo">
                     <PrimaryTitle>СЦЕНА</PrimaryTitle>
                 </DefaultLink>

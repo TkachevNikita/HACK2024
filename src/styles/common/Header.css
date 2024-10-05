@@ -1,11 +1,15 @@
+.header {
+    box-shadow: 0 4px 5px -5px rgba(0, 0, 0, 0.233);
+    background-color: #ffffff;
+}
+
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     padding: 20px 40px;
-    box-shadow: 0 4px 5px -5px rgba(0, 0, 0, 0.233);
-    background-color: #ffffff;
+   
     z-index: 999 !important;
 }
 
