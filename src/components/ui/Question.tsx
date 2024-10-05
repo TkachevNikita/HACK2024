@@ -1,4 +1,5 @@
 import { IQuestion } from '@components/common/Questions'
+
 import React from 'react'
 
 type Grade = 1 | 2 | 3 | 4 | 5 | null
@@ -7,6 +8,7 @@ const grade: Grade[] = [1, 2, 3, 4, 5]
 
 const Question: React.FC<{question: IQuestion, serialNumber: number}> = ({question, serialNumber}) => {
     const [selected, setSelected] = React.useState<Grade>(null)
+    
   return (
     <div>
         <p><span style={{color: '#EBEBEB'}}>{serialNumber}</span> {question?.text}</p>

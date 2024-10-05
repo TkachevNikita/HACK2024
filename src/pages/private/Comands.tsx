@@ -5,7 +5,9 @@ import PageTitle from "@components/ui/PageTitle";
 import { Box } from "@mui/material";
 import withAuth from "@shared/hoc/withAuth";
 import { getCommands } from "@shared/services/command";
+import { commandsState, selectedCommandState } from "@store/command";
 import React from "react";
+import { useRecoilState } from "recoil";
 
 export type StatusCommand = 'Ожидают' | "Выступают" | 'Не оценено' | "Оценено"
 
@@ -21,7 +23,8 @@ export interface ICommand {
 }
 
 const Comands = () => {
-    const [commands, setCommands] = React.useState<ICommand[]>([])
+    const [commands, setCommands] = useRecoilState(commandsState)
+    const [selected, setSelected] = useRecoilState(selectedCommandState)
     React.useEffect(() => {
         getCommands().then((data) => {
             setCommands(data)
@@ -33,7 +36,7 @@ const Comands = () => {
             <PageTitle>Хакатон “ИТЫ Герой”</PageTitle>
             <HintTextPage>Выберите команду для оценивания</HintTextPage>
             <div style={{display: 'flex', flexDirection: 'column', rowGap: '20px', marginTop: 32, }}>
-                {commands?.map((i: ICommand) => <Command {...i}/>)}
+                {commands?.map((i: ICommand, idx) => <Command {...i} idx={idx} selected={selected} setSelected={setSelected}/>)}
             </div>
         </div>
         <div style={{display: 'flex', width: '100%', justifyContent: 'center', padding: '16px', }}>
