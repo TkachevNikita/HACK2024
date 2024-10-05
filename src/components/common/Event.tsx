@@ -1,7 +1,6 @@
 import React from 'react';
 import '@styles/common/Event.css'
-// @ts-ignore
-import {IEvent} from "@types/event.ts";
+import { IEvent } from '../../types/event';
 
 interface EventProps {
     event: IEvent

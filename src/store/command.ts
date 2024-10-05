@@ -1,7 +1,7 @@
 import { ICommand } from "@pages/private/Comands";
 import { atom } from "recoil";
 
-export const commandsState = atom<ICommand | undefined>({
+export const commandsState = atom<ICommand[] | undefined>({
     key: 'commandsState', 
     default: undefined
 });

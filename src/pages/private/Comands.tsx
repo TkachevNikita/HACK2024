@@ -36,7 +36,7 @@ const Comands = () => {
             <PageTitle>Хакатон “ИТЫ Герой”</PageTitle>
             <HintTextPage>Выберите команду для оценивания</HintTextPage>
             <div style={{display: 'flex', flexDirection: 'column', rowGap: '20px', marginTop: 32, }}>
-                {commands?.map((i: ICommand, idx) => <Command {...i} idx={idx} selected={selected} setSelected={setSelected}/>)}
+                {commands?.map((i: ICommand, idx: number) => <Command {...i} idx={idx} selected={selected} setSelected={setSelected}/>)}
             </div>
         </div>
         <div style={{display: 'flex', width: '100%', justifyContent: 'center', padding: '16px', }}>

@@ -1,16 +1,15 @@
 import React from 'react'
-import { ICommand } from '@pages/private/Comands'
 import MiniCardIndicator from '@components/ui/MiniCardIndicator'
-import StatusCommand from '@components/ui/StatusCommand'
 import { useRecoilState } from 'recoil'
 import { currentCaseIdState } from '@store/questions'
+import StatusCommand from '@components/ui/StatusCommand'
+import { StatusCommand as StatusCommandProps } from '@pages/private/Comands'
 
-const Command: React.FC<{command: ICommand, idx: number, selected: number, setSelected: (value: number) => void}> = (props) => {
+const Command: React.FC<{case: {id: number, name: string, description: string}, Name: string, idx: number, selected: number, status: StatusCommandProps, setSelected: (value: number) => void}> = (props) => {
     const [_, setCurrentCaseId] = useRecoilState(currentCaseIdState)
 
     const handleClick = () => {
         props.setSelected(props.idx)
-        console.log(props?.case.id)
         setCurrentCaseId(props?.case.id)
           
     }
