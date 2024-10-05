@@ -3,7 +3,7 @@ import { atom } from "recoil";
 
 export const commandsState = atom<ICommand[] | undefined>({
     key: 'commandsState', 
-    default: undefined
+    default: []
 });
 
 export const selectedCommandState = atom({

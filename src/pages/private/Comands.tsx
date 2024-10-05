@@ -38,6 +38,9 @@ const Comands = () => {
             <div style={{display: 'flex', flexDirection: 'column', rowGap: '20px', marginTop: 32, }}>
                 {commands?.map((i: ICommand, idx: number) => <Command {...i} idx={idx} selected={selected} setSelected={setSelected}/>)}
             </div>
+            <div>
+                {commands?.length === 0 && <p style={{textAlign: 'center'}}>Ничего не найдено!</p>}
+            </div>
         </div>
         <div style={{display: 'flex', width: '100%', justifyContent: 'center', padding: '16px', }}>
            <Questions/>
