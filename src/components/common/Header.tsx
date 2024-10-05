@@ -92,7 +92,8 @@ const Header = () => {
                 </Drawer>
 
                 <AccentButton>
-                    Войти
+                    <Link to="/HACK2024/sign-in"> Войти</Link>
+                   
                 </AccentButton>
             </div>
         </header>

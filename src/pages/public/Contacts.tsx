@@ -7,7 +7,7 @@ import {TextField} from "@mui/material";
 
 const Contacts: React.FC = () => {
     return (
-        <div className="contacts">
+        <div className="contacts" style={{maxWidth: 1320, marginRight: 'auto', marginLeft: 'auto'}}>
             <h2 className="contacts__title">
                 Контакты
             </h2>

@@ -39,8 +39,8 @@ const Registration = () => {
       <HintText>Для авторизации введите ваше ФИО и пароль </HintText>
       <DefaultTextField value={email} onChange={(e) => setEmail(e.target.value)} sx={{mt: '24px'}} placeholder="E-mail"/>
       <DefaultTextField value={login} onChange={(e) => setLogin(e.target.value)} sx={{mt: '12px'}} placeholder="ФИО"/>
-      <DefaultTextField value={password} onChange={(e) => setPassword(e.target.value)} sx={{mt: '12px'}} placeholder="Пароль"/>
-      <DefaultTextField value={repeatPassword} onChange={(e) => setRepeatPassword(e.target.value)} sx={{mt: '12px'}} placeholder="Повторите пароль"/>
+      <DefaultTextField type="password" value={password} onChange={(e) => setPassword(e.target.value)} sx={{mt: '12px'}} placeholder="Пароль"/>
+      <DefaultTextField type='password' value={repeatPassword} onChange={(e) => setRepeatPassword(e.target.value)} sx={{mt: '12px'}} placeholder="Повторите пароль"/>
       <DefaultButton className={isFulledFields ? 'hack2024-button-default active' : 'hack2024-button-default'} onClick={handleSubmit} sx={{mt: '16px'}}>Зарегистрироваться</DefaultButton>
       {isError && <ErrorText sx={{mt: '14px'}}>Ошибка регистрации. Пожалуйста попробуйте позже!</ErrorText>}
       <HintText sx={{mt: '14px'}}>Уже есть аккаунт?</HintText>
