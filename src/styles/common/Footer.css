@@ -8,3 +8,20 @@
     background: var(--lightdark-color);
     padding: 20px;
 }
+
+.footer__container {
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 450px) {
+    .footer__container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
