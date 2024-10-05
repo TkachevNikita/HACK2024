@@ -6,6 +6,7 @@ import Registration from '@pages/public/Registration';
 import Home from "@pages/public/Home.tsx";
 import Comands from '@pages/private/Comands';
 import { NotFound } from '@pages/public/NotFound';
+import Contacts from "@pages/public/Contacts.tsx";
 
 const PagesRouter = () => {
   return (
@@ -15,6 +16,7 @@ const PagesRouter = () => {
                 <Route path="HACK2024" element={<Home/>}/>
                 <Route path="HACK2024/participant" element={<ProfileUserParticipant />} />
                 <Route path="HACK2024/commands" element={<Comands />} />
+                <Route path="HACK2024/contacts" element={<Contacts />} />
                 <Route path="HACK2024/sign-up" element={<Registration />} />
                 <Route path="HACK2024/sign-in" element={<Login />} />
                 <Route path='*' element={<NotFound />} />
