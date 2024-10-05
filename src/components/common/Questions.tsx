@@ -29,6 +29,9 @@ const Questions = () => {
             <div style={{display: 'flex', rowGap: 32, flexDirection: 'column'}}>
                 {questions?.map((i, id) => <Question question={i} serialNumber={id + 1}/>)}
             </div>
+            <div>
+                {questions?.length === 0 && <p style={{textAlign: 'center', marginTop: 40}}>Ничего не найдено!</p>}
+            </div>
         </div>
   )
 }
