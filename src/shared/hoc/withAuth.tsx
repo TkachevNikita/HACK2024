@@ -7,12 +7,12 @@ type WithAuthProps = {
 
 const withAuth = <P extends object>(Page: React.ComponentType<P>) => {
   const AuthenticatedComponent: React.FC<P & WithAuthProps> = ({ ...props }) => {
-    const isAuthenticated = false; 
+    const isAuthenticated = Boolean(localStorage.getItem('token')); 
 
     return isAuthenticated ? (
       <Page {...(props as P)} />
     ) : (
-      <Navigate to="/sign-in" replace />
+      <Navigate to="/HACK2024/sign-in" replace />
     );
   };
 

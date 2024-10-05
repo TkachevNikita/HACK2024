@@ -1,6 +1,16 @@
+.header {
+    box-shadow: 0 4px 5px -5px rgba(0, 0, 0, 0.233);
+    background-color: #ffffff;
+}
+
 .header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 40px;
+   
+    z-index: 999 !important;
 }
 
 .header__logo img {
@@ -11,12 +21,28 @@
 .header__nav {
     display: flex;
     gap: 30px;
-    margin-right: auto;
-    margin-left: 40px;
 }
 
 .header__nav--item {
     font-size: 18px !important;
-    color: var(--harddark-color) !important;
+    color: var(--harddark-color);
     text-decoration: none !important;
+}
+
+.header__burger {
+    display: none !important;
+}
+
+@media (max-width: 620px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: block !important;
+    }
+
+    .header__logo {
+        display: none;
+    }
 }

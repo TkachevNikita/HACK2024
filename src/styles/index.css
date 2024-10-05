@@ -9,5 +9,7 @@
 
 body {
     font-family: "Golos Text", sans-serif;
+    height: 100vh;
+    background-color: #FAFAFA;
 }
 

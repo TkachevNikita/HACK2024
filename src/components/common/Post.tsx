@@ -1,5 +1,7 @@
 import React from 'react';
 import '@styles/common/Post.css'
+import CloseIcon from '@mui/icons-material/Close';
+import {IconButton} from "@mui/material";
 
 const Post: React.FC = () => {
     return (
@@ -8,9 +10,9 @@ const Post: React.FC = () => {
                 <h3 className="post__title">
                     Сцена - единая платформа для проведения хакатонов
                 </h3>
-                <div className="post__close">
-                    x
-                </div>
+                <IconButton className="post__close">
+                    <CloseIcon/>
+                </IconButton>
             </div>
             <div className="post__text">
                 Жюри может оценивать участников, а участники получить обратную связь от жюри

@@ -1,0 +1,10 @@
+@import url('../constants.css');
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--lightdark-color);
+    padding: 20px;
+}

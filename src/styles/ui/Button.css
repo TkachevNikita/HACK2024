@@ -1,6 +1,23 @@
-.hack2024-button {
-    background-color: red !important;
-    font-size: 30px !important;
+@import url('../constants.css');
+
+.hack2024-button-default.active {
+    background-color: var(--primary-color) !important;
+    font-size: 16px !important;
+    width: 30% !important;
+    color: var(--light-color) !important;
+    border-radius: 12px !important;
+    padding: 10px 20px !important;
+    text-transform: none !important;
+}
+
+.hack2024-button-default {
+    background-color: var(--middlegrey-color) !important;
+    font-size: 16px !important;
+    width: 30% !important;
+    color: var(--ultrahardgrey-color) !important;
+    border-radius: 12px !important;
+    padding: 10px 20px !important;
+    text-transform: none !important;
 }
 
 @media screen and (max-width: 320px) {
