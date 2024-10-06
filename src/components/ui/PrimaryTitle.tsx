@@ -1,6 +1,6 @@
 import React from 'react'
-import { Typography } from '@mui/material'
-import { TypographyProps } from '@mui/material'
+import { Typography, TypographyProps } from '@mui/material'
+
 import '@styles/ui/PrimaryTitle.css'
 
 const PrimaryTitle: React.FC<TypographyProps> = (props) => {

@@ -1,0 +1,12 @@
+@import '../constants.css';
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+.hack2024-nav-link {
+    font-size: 18px !important;
+    color: var(--harddark-color);
+    text-decoration: none !important;
+}
+
+.hack2024-nav-link.active {
+    color: var(--primary-color);
+}

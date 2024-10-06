@@ -1,0 +1,8 @@
+@import '../constants.css';
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+.hack2024-page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}

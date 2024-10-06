@@ -22,6 +22,39 @@ export interface ICommand {
       }
 }
 
+const test = [
+    {
+        "id": 'number',
+        "Name": 'string',
+        "status": 'Ожидают',
+        "case": {
+            "id": 2,
+            "name": 'string',
+            "description": 'string'
+          }
+    },
+    {
+        "id": 'number',
+        "Name": 'string',
+        "status": 'Ожидают',
+        "case": {
+            "id": 2,
+            "name": 'string',
+            "description": 'string'
+          }
+    },
+    {
+        "id": 'number',
+        "Name": 'string',
+        "status": 'Ожидают',
+        "case": {
+            "id": 2,
+            "name": 'string',
+            "description": 'string'
+          }
+    }
+]
+
 const Comands = () => {
     const [commands, setCommands] = useRecoilState(commandsState)
     const [selected, setSelected] = useRecoilState(selectedCommandState)
@@ -36,10 +69,10 @@ const Comands = () => {
             <PageTitle>Хакатон “ИТЫ Герой”</PageTitle>
             <HintTextPage>Выберите команду для оценивания</HintTextPage>
             <div style={{display: 'flex', flexDirection: 'column', rowGap: '20px', marginTop: 32, }}>
-                {commands?.map((i: ICommand, idx: number) => <Command {...i} idx={idx} selected={selected} setSelected={setSelected}/>)}
+                {test?.map((i: ICommand, idx: number) => <Command {...i} idx={idx} selected={selected} setSelected={setSelected}/>)}
             </div>
             <div>
-                {commands?.length === 0 && <p style={{textAlign: 'center'}}>Ничего не найдено!</p>}
+                {test?.length === 0 && <p style={{textAlign: 'center'}}>Ничего не найдено!</p>}
             </div>
         </div>
         <div style={{display: 'flex', width: '100%', justifyContent: 'center', padding: '16px', }}>

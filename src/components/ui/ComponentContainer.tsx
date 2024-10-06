@@ -1,6 +1,5 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import type { BoxProps } from '@mui/material/Box';
+import React from 'react';
+import { Box, BoxProps} from '@mui/material';
 
 const ComponentContainer: React.FC<BoxProps> = (props) => {
     const {children, ...rest} = props

@@ -1,0 +1,21 @@
+.login {
+    padding: 10px;
+}
+
+@media (max-width: 1440px) {
+    .login .hack2024-textField, .hack2024-button-default, .hack2024-button-default.active {
+        width: 40% !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .login .hack2024-textField, .hack2024-button-default, .hack2024-button-default.active  {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 740px) {
+    .login .hack2024-textField, .hack2024-button-default, .hack2024-button-default.active  {
+        width: 80% !important;
+    }
+}

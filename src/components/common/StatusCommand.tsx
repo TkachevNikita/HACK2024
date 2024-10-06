@@ -1,12 +1,15 @@
 import React from 'react'
-import { StatusCommand as StatusCommandProps } from '@pages/private/Comands'
+
+import type { StatusCommand as StatusCommandProps } from '@pages/private/Comands'
+
 import Error from '@assets/images/icons/error.svg'
 import Panding from '@assets/images/icons/panding.svg'
 import Success from '@assets/images/icons/success.svg'
 import Work from '@assets/images/icons/work.svg'
 
-const StatusCommand: React.FC<{status: StatusCommandProps}> = ({status}) => {
-    console.log(status)
+import '@styles/common/StatusCommand.css'
+
+const StatusCommand: React.FC<{status: StatusCommandProps}> = ({ status }) => {
   switch(status) {
     case 'Ожидают':
         return <div style={{display: 'flex', alignItems: 'center', columnGap: 8, fontSize: 14, 

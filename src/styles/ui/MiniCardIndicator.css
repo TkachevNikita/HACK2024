@@ -1,0 +1,12 @@
+@import '../constants.css';
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+.hack2024-mini-card-indicator {
+    padding: 4px 12px; 
+    background-color: #F7F7F7;
+    border-radius: 8px;
+}
+
+.hack2024-mini-card-indicator p {
+    font-size: 14px;
+}

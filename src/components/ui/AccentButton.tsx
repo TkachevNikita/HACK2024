@@ -1,6 +1,6 @@
 import React from 'react';
-import {ButtonProps} from "@mui/material/Button";
-import {Button} from "@mui/material";
+import { Button, ButtonProps } from "@mui/material";
+
 import '@styles/ui/AccentButton.css'
 
 const AccentButton: React.FC<ButtonProps> = (props) => {

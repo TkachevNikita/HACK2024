@@ -1,6 +1,6 @@
 import HintTextPage from '@components/ui/HintTextPage'
 import PageTitle from '@components/ui/PageTitle'
-import Question from '@components/ui/Question'
+import Question from './Question'
 import { getQuestions } from '@shared/services/question'
 import { commandsState, selectedCommandState } from '@store/command'
 import { currentCaseIdState } from '@store/questions'

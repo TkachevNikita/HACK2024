@@ -2,6 +2,10 @@
     margin: 30px 0;
 }
 
+.contacts__container {
+    padding: 0 20px;
+}
+
 .contacts__title {
     margin-bottom: 16px;
 }

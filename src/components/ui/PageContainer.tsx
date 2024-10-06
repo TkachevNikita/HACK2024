@@ -1,13 +1,12 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import type { BoxProps } from '@mui/material/Box';
+import React from 'react';
+import { Box, BoxProps } from '@mui/material';
+
+import "@styles/ui/PageContainer.css";
 
 const PageContainer: React.FC<BoxProps> = (props) => {
     const {children, ...rest} = props
     return (
-    <Box component="section" sx={{ 
-      // border: '1px dashed grey',
-      display: 'flex', flexDirection: 'column', height: '100vh',  }} {...rest}>
+    <Box component="div" className='hack2024-page-container' {...rest}>
         {children}
     </Box>
   );
