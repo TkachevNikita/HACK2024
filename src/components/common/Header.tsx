@@ -16,7 +16,7 @@ import '@styles/common/Header.css';
 
 const Header: React.FC = () => {
     const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
-    const [styles, setStyles] = React.useState({maxWidth: 1320, marginLeft: 'auto', marginRight: 'auto'})
+    const [styles, setStyles] = React.useState<React.CSSProperties>({maxWidth: 1320, marginLeft: 'auto', marginRight: 'auto'})
     const route = useLocation().pathname
     const isPageCommands = route === '/HACK2024/commands'
 
